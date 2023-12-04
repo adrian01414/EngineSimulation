@@ -13,7 +13,7 @@ namespace EngineSimulation
             EngineStats engineStats = new EngineStats();
             Engine engine = new InternalCombustionEngine(engineStats);
             
-            Console.WriteLine("Enter the ambient temperature: ");
+            Console.WriteLine("Введите температуру окружающей среды: ");
             double ambientTemperature = 20;
             try
             {
