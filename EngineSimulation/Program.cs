@@ -33,6 +33,7 @@ namespace EngineSimulation
                 Console.WriteLine("Двигатель не перегрелся");
             }
             Console.WriteLine("Максимальная мощность - " + testingStand.MaxPower + " кВт при скорости коленвала " + testingStand.CrankshaftSpeed + " радиан/сек");
+            Console.WriteLine("Для продолжения нажмите любую клавишу...");
             Console.ReadKey();
         }
     }
