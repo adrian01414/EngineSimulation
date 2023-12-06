@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EngineSimulation
 {
-    class Engine
+    abstract class Engine
     {
         public double I { get; protected set; } = 0;
         public double[] M { get; protected set; } = { 0, 0, 0 };
@@ -26,7 +26,7 @@ namespace EngineSimulation
 
         protected double timeInterval = 0.1;
 
-        public virtual void StartEngine(double ambientTemperature) { }
+        abstract public void StartEngine(double ambientTemperature);
 
         public void InitializeEngine(EngineStats engineStats)
         {
